@@ -565,7 +565,7 @@ main {
 .service-title { margin-bottom: 20px; }
 
 .service-list {
-  display: grid;
+  display: block;
   grid-template-columns: 1fr;
   gap: 20px;
 }
