@@ -7,17 +7,17 @@ const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
 
 
-// sidebar variables
+// collapse variables
 const collapse = document.querySelector("[data-collapse]");
 const collapseBtn = document.querySelector("[data-collapse-btn]");
 
-// sidebar toggle functionality for mobile
+// collapse toggle functionality for mobile
 collapseBtn.addEventListener("click", function () { elementToggleFunc(collapse); });
 
 
 
-// credentials variables
-const credentialsItem = document.querySelectorAll("[data-credentials-item]");
+// testimonials variables
+const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
 const overlay = document.querySelector("[data-overlay]");
@@ -28,37 +28,37 @@ const modalTitle = document.querySelector("[data-modal-title]");
 const modalText = document.querySelector("[data-modal-text]");
 
 // modal toggle function
-const credentialsModalFunc = function () {
+const testimonialsModalFunc = function () {
   modalContainer.classList.toggle("active");
   overlay.classList.toggle("active");
 }
 
 // add click event to all modal items
-for (let i = 0; i < credentialsItem.length; i++) {
+for (let i = 0; i < testimonialsItem.length; i++) {
 
-  credentialsItem[i].addEventListener("click", function () {
+  testimonialsItem[i].addEventListener("click", function () {
 
-    modalImg.src = this.querySelector("[data-credentials-avatar]").src;
-    modalImg.alt = this.querySelector("[data-credentials-avatar]").alt;
-    modalTitle.innerHTML = this.querySelector("[data-credentials-title]").innerHTML;
-    modalText.innerHTML = this.querySelector("[data-credentials-text]").innerHTML;
+    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
+    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
+    modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
+    modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
 
-    credentialsModalFunc();
+    testimonialsModalFunc();
 
   });
 
 }
 
 // add click event to modal close button
-modalCloseBtn.addEventListener("click", credentialsModalFunc);
-overlay.addEventListener("click", credentialsModalFunc);
+modalCloseBtn.addEventListener("click", testimonialsModalFunc);
+overlay.addEventListener("click", testimonialsModalFunc);
 
 
 
 // custom select variables
 const select = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-select-value]");
+const selectValue = document.querySelector("[data-selecct-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
 select.addEventListener("click", function () { elementToggleFunc(this); });
@@ -155,20 +155,5 @@ for (let i = 0; i < navigationLinks.length; i++) {
       }
     }
 
-  });
-}
-
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
   });
 }
