@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -7,33 +7,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Patrick Walker Portfolio</title>
 
-  <!--
+    <!--
     - favicon
   -->
   <link rel="shortcut icon" href="./assets/images/icon-p.svg" type="image/x-icon">
 
-  <!--
+    <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" >
 
-  <!--
+    <!--
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    >
+  </head>
 
-<body>
-
-  <!--
+  <body>
+    <!--
     - #MAIN
   -->
 
-  <main>
-
-    <!--
+    <main>
+      <!--
       - #SIDEBAR
     -->
 
@@ -57,17 +58,10 @@
           <span>Show Contacts</span>
           <p>Contact Info</p>
         </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
+          <div class="separator"></div>
+          <div class="sidebar-info_more"></div>
         <ul class="contacts-list">
-
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="mail-outline"></ion-icon>
             </div>
@@ -81,7 +75,6 @@
           </li>
 
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="phone-portrait-outline"></ion-icon>
             </div>
@@ -97,10 +90,12 @@
         </ul>
 
         <div class="separator"></div>
-
+        <div class="sidebar-info_more"></div>
         <ul class="social-list">
 
           <li class="social-item">
+            <a href="https://www.linkedin.com/in/walkerrpatrick/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
             <a href="https://www.linkedin.com/in/walkerrpatrick/" class="social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
@@ -109,27 +104,22 @@
           <li class="social-item">
             <a href="https://github.com/walkerpr" class="social-link">
               <ion-icon name="logo-github"></ion-icon>
+            <a href="https://github.com/walkerpr" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
 
 
         </ul>
+        </div>
+      </aside>
 
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
+      <!--
       - #main-content
     -->
 
-    <div class="main-content">
-
-      <!--
+      <div class="main-content">
+        <!--
         - #NAVBAR
       -->
 
@@ -165,11 +155,11 @@
 
 
 
-      <!--
+        <!--
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+        <article class="about active" data-page="about">
 
         <header>
           <h2 class="h2 article-title">About Me</h2>
@@ -371,10 +361,7 @@
       </article>
 
 
-
-
-
-      <!--
+        <!--
         - #RESUME
       -->
 
@@ -392,10 +379,14 @@
 
 
 
-      <!--
+        <!--
         - #PORTFOLIO
       -->
 
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
         <article class="portfolio" data-page="portfolio">
           <header>
             <h2 class="h2 article-title">Portfolio</h2>
@@ -406,11 +397,22 @@
               <li class="filter-item">
                 <button class="active" data-filter-btn>All</button>
               </li>
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
 
               <li class="filter-item">
                 <button data-filter-btn>Cloud Architecture</button>
               </li>
+              <li class="filter-item">
+                <button data-filter-btn>Cloud Architecture</button>
+              </li>
 
+              <li class="filter-item">
+                <button data-filter-btn>DevSecOps</button>
+              </li>
               <li class="filter-item">
                 <button data-filter-btn>DevSecOps</button>
               </li>
@@ -419,12 +421,23 @@
                 <button data-filter-btn>System Administration</button>
               </li>
             </ul>
+              <li class="filter-item">
+                <button data-filter-btn>System Administration</button>
+              </li>
+            </ul>
 
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
             <div class="filter-select-box">
               <button class="filter-select" data-select>
 
               <div class="select-value" data-select-value>Select category</div>
+              <div class="select-value" data-select-value>Select category</div>
 
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
                 <div class="select-icon">
                   <ion-icon name="chevron-down"></ion-icon>
                 </div>
@@ -434,7 +447,14 @@
                 <li class="select-item">
                   <button data-select-item>All</button>
                 </li>
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
 
+                <li class="select-item">
+                  <button data-select-item>Cloud Architecture</button>
+                </li>
                 <li class="select-item">
                   <button data-select-item>Cloud Architecture</button>
                 </li>
@@ -442,7 +462,15 @@
                 <li class="select-item">
                   <button data-select-item>DevSecOps</button>
                 </li>
+                <li class="select-item">
+                  <button data-select-item>DevSecOps</button>
+                </li>
 
+                <li class="select-item">
+                  <button data-select-item>System Administration</button>
+                </li>
+              </ul>
+            </div>
                 <li class="select-item">
                   <button data-select-item>System Administration</button>
                 </li>
@@ -484,7 +512,23 @@
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
                     </div>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="system administration"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
+                    <img
+                      src="./assets/images/project-2.png"
+                      alt="orizon"
+                      loading="lazy"
+                    >
+                  </figure>
                     <img
                       src="./assets/images/project-2.png"
                       alt="orizon"
@@ -493,11 +537,25 @@
                   </figure>
 
                   <h3 class="project-title">Orizon</h3>
+                  <h3 class="project-title">Orizon</h3>
 
                   <p class="project-category">System Administration</p>
                 </a>
               </li>
+                  <p class="project-category">System Administration</p>
+                </a>
+              </li>
 
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="cloud architecture"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
               <li
                 class="project-item active"
                 data-filter-item
@@ -515,13 +573,33 @@
                       loading="lazy"
                     >
                   </figure>
+                    <img
+                      src="./assets/images/project-3.jpg"
+                      alt="fundo"
+                      loading="lazy"
+                    >
+                  </figure>
 
+                  <h3 class="project-title">Fundo</h3>
                   <h3 class="project-title">Fundo</h3>
 
                   <p class="project-category">Cloud Architecture</p>
                 </a>
               </li>
+                  <p class="project-category">Cloud Architecture</p>
+                </a>
+              </li>
 
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="devsecops"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
               <li
                 class="project-item active"
                 data-filter-item
@@ -539,13 +617,33 @@
                       loading="lazy"
                     >
                   </figure>
+                    <img
+                      src="./assets/images/project-4.png"
+                      alt="brawlhalla"
+                      loading="lazy"
+                    >
+                  </figure>
 
+                  <h3 class="project-title">Brawlhalla</h3>
                   <h3 class="project-title">Brawlhalla</h3>
 
                   <p class="project-category">DevSecOps</p>
                 </a>
               </li>
+                  <p class="project-category">DevSecOps</p>
+                </a>
+              </li>
 
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="cloud architecture"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
               <li
                 class="project-item active"
                 data-filter-item
@@ -563,13 +661,33 @@
                       loading="lazy"
                     >
                   </figure>
+                    <img
+                      src="./assets/images/project-5.png"
+                      alt="dsm."
+                      loading="lazy"
+                    >
+                  </figure>
 
+                  <h3 class="project-title">DSM.</h3>
                   <h3 class="project-title">DSM.</h3>
 
                   <p class="project-category">Cloud Architecture</p>
                 </a>
               </li>
+                  <p class="project-category">Cloud Architecture</p>
+                </a>
+              </li>
 
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="cloud architecture"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
               <li
                 class="project-item active"
                 data-filter-item
@@ -587,13 +705,33 @@
                       loading="lazy"
                     >
                   </figure>
+                    <img
+                      src="./assets/images/project-6.png"
+                      alt="metaspark"
+                      loading="lazy"
+                    >
+                  </figure>
 
+                  <h3 class="project-title">MetaSpark</h3>
                   <h3 class="project-title">MetaSpark</h3>
 
                   <p class="project-category">Cloud Architecture</p>
                 </a>
               </li>
+                  <p class="project-category">Cloud Architecture</p>
+                </a>
+              </li>
 
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="system administration"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
               <li
                 class="project-item active"
                 data-filter-item
@@ -611,13 +749,33 @@
                       loading="lazy"
                     >
                   </figure>
+                    <img
+                      src="./assets/images/project-7.png"
+                      alt="summary"
+                      loading="lazy"
+                    >
+                  </figure>
 
+                  <h3 class="project-title">Summary</h3>
                   <h3 class="project-title">Summary</h3>
 
                   <p class="project-category">System Administration</p>
                 </a>
               </li>
+                  <p class="project-category">System Administration</p>
+                </a>
+              </li>
 
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="devsecops"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
               <li
                 class="project-item active"
                 data-filter-item
@@ -635,13 +793,33 @@
                       loading="lazy"
                     >
                   </figure>
+                    <img
+                      src="./assets/images/project-8.jpg"
+                      alt="task manager"
+                      loading="lazy"
+                    >
+                  </figure>
 
+                  <h3 class="project-title">Task Manager</h3>
                   <h3 class="project-title">Task Manager</h3>
 
                   <p class="project-category">DevSecOps</p>
                 </a>
               </li>
+                  <p class="project-category">DevSecOps</p>
+                </a>
+              </li>
 
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="system administration"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
               <li
                 class="project-item active"
                 data-filter-item
@@ -659,7 +837,14 @@
                       loading="lazy"
                     >
                   </figure>
+                    <img
+                      src="./assets/images/project-9.png"
+                      alt="arrival"
+                      loading="lazy"
+                    >
+                  </figure>
 
+                  <h3 class="project-title">Arrival</h3>
                   <h3 class="project-title">Arrival</h3>
 
                   <p class="project-category">System Administration</p>
@@ -916,17 +1101,21 @@
 
 
 
-  <!--
+    <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!--
+    <!--
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
