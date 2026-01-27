@@ -1533,7 +1533,17 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .info-content .title {
-  color: var(--white-1);
+  color: var(--gentle-blue);
+  background: var(--onyx);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-300);
+  width: max-content;
+  padding: 3px 12px;
+  border-radius: 8px;
+}
+
+.info-content .text {
+  color: var(--gentle-blue);
   background: var(--onyx);
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
