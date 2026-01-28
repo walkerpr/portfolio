@@ -56,12 +56,12 @@
   --bg-gradient-blue-3: linear-gradient(
     to bottom right,
     hsl(208.02, 72.29%, 45.29%),
-    hsla(200.02, 72.29%, 40.29%)99%
+    hsla(200.02, 72.29%, 40.29%)
   );
   --bg-gradient-blue-4: linear-gradient(
-    to top,
+    to right,
     hsl(208.02, 72.29%, 45.29%),
-    hsl(240, 1%, 17%) 80%
+    hsla(240, 1%, 17%) 80%
   );
   --bg-gradient-white: linear-gradient(
     to top left,
@@ -197,7 +197,9 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--bg-gradient-blue-4); }
+body {
+  background: var(--bg-gradient-blue-4);
+}
 
 
 
@@ -208,6 +210,7 @@ body { background: var(--bg-gradient-blue-4); }
 \*-----------------------------------*/
 
 .sidebar,
+
 article {
   background: var(--eerie-black-2);
   border: 1px solid var(--gentle-blue);
@@ -217,7 +220,8 @@ article {
   z-index: 1;
 }
 
-.separation {
+
+.separator {
   width: 100%;
   height: 2px;
   background: var(--text-gradient-blue);
@@ -226,10 +230,10 @@ article {
 
 .icon-box {
   position: relative;
-  background: var(--border-gradient-onyx);
+
   width: 30px;
   height: 30px;
-  border-radius: 8px;
+  border-radius: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -299,6 +303,7 @@ article.active {
   border-radius: 4px;
 }
 
+
 .has-scrollbar::-webkit-scrollbar {
   width: 5px; /* for vertical scrollbar */
   height: 5px; /* for horizontal scrollbar */
@@ -337,9 +342,6 @@ article.active {
 }
 
 
-
-
-
 /*-----------------------------------*\
   #MAIN
 \*-----------------------------------*/
@@ -359,13 +361,15 @@ main {
 \*-----------------------------------*/
 
 .sidebar {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   max-height: 112px;
   overflow: hidden;
   transition: var(--transition-2);
 }
 
-.sidebar.active { max-height: 405px; }
+.sidebar.active {
+  max-height: 405px;
+}
 
 .sidebar-info {
   position: relative;
@@ -508,14 +512,14 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 2px;
+  gap: 1px;
   padding-bottom: 4px;
   padding-left: 7px;
 }
 
 .social-item .social-link {
   color: var(--gentle-blue);
-  font-size: 48px;
+  font-size: 28px;
   align-content: center;
 }
 
@@ -531,16 +535,16 @@ main {
 \*-----------------------------------*/
 
 .navbar {
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
-  backdrop-filter: blur(10px);
+  background: var(--eerie-black-2);
   border: 1px solid var(--gentle-blue);
-  border-radius: 12px 12px 0 0;
+  border-radius: 12px 12px 12px 12px;
   box-shadow: var(--shadow-2);
   z-index: 5;
+  margin-bottom: 5px;
 }
 
 .navbar-list {
@@ -588,7 +592,7 @@ main {
   position: relative;
   background: var(--border-gradient-blue);
   padding: 20px;
-  border-radius: 14px;
+  border-radius: 5px;
   box-shadow: var(--shadow-2);
   z-index: 1;
   margin-bottom: 5px;
@@ -619,12 +623,63 @@ main {
   text-align: center;
 }
 
+ /* Style the button that is used to open and close the collapsible content */
+
+.collapsible {
+  background: none;
+  padding: 0;
+  width: 100%;
+  border: none;
+  text-align: right;
+  outline: none;
+  display: flex;
+  gap: 15px;
+  justify-content: start;
+}
+
+.collapsible:hover {
+  opacity: 0.7;
+}
+
+.collapsible::after {
+  content: '\002B';
+  margin-bottom: 1px;
+  color: var(--gentle-blue);
+}
+
+.collapsible.active::after {
+  content: "\2212";
+  color: var(--gentle-blue);
+}
+
+.content {
+  padding: 0 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.collapsible + .content {
+  max-height: 0;
+}
+
+.collapsible.active + .content {
+  max-height: none
+}
+
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  overflow: hidden;
+  background-color: var(--eerie-black-2);
+}
+
 
 /**
  * #service
  */
 
-.service { margin-bottom: 15px; }
+.service { margin-bottom: 5px; }
 
 .service-title { margin-bottom: 20px; }
 
@@ -639,7 +694,7 @@ main {
   position: relative;
   background: var(--border-gradient-blue);
   padding: 20px;
-  border-radius: 14px;
+  border-radius: 5px;
   box-shadow: var(--shadow-2);
   margin-bottom: 10px;
   z-index: 1;
@@ -669,6 +724,8 @@ main {
   color: var(--gentle-blue);
   font-size: var(--fs-2);
   font-weight: var(--fw-900);
+  text-decoration: underline;
+  text-decoration-color: var(--bg-gradient-blue-4);
  }
 
 .service-item .text {
@@ -709,11 +766,11 @@ main {
 .credentials-item {
   position: relative;
   background: var(--border-gradient-blue);
-  padding: 20px;
-  border-radius: 14px;
+  padding: 2px;
+  border-radius: 5px;
   box-shadow: var(--shadow-2);
   z-index: 1;
-  margin-bottom: 15px;
+
 }
 
 .credentials-item::before {
@@ -740,6 +797,10 @@ main {
 .credentials-icon-box img { margin: auto; }
 
 .credentials-item-title {
+  text-decoration: underline;
+  text-decoration-color: var(--bg-gradient-blue-4);
+  margin-left: 5px;
+  margin-right: 5px;
   margin-bottom: 7px;
   text-align: center;
   color: var(--gentle-blue);
@@ -781,6 +842,7 @@ main {
   -webkit-box-orient: vertical;
   text-align: center;
   overflow: hidden;
+  margin-bottom: 10px;
 }
 /**
  * #credentials-modal
@@ -1533,13 +1595,14 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .info-content .title {
-  color: var(--gentle-blue);
+  color: white;
   background: var(--onyx);
   font-size: var(--fs-4);
   font-weight: var(--fw-300);
   width: max-content;
   padding: 3px 12px;
-  border-radius: 8px;
+  border-radius: 10px;
+  border: solid var(--gentle-blue);
 }
 
 .info-content .text {
@@ -1661,7 +1724,9 @@ textarea.form-input::-webkit-resizer { display: none; }
    * #ABOUT
    */
 
-  .about .article-title { margin-bottom: 20px; }
+  .about .article-title {
+    margin-bottom: 20px;
+  }
 
   .about-text { margin-bottom: 40px; }
 
@@ -2082,7 +2147,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar, article { width: auto; }
 
-  article { min-height: 100%; }
+  article {
+    min-height: 50%;
+  }
 
 
 
@@ -2115,6 +2182,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     position: sticky;
     top: 60px;
     max-height: max-content;
+    max-width: max-content;
     height: 100%;
     width: 75%;
     margin-bottom: 0;
@@ -2158,10 +2226,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     font-weight: var(--fw-300);
   }
 
-  .separation:last-of-type {
-    margin: 15px 0;
-    opacity: 0;
-  }
+
 
   .social-list { justify-content: center; }
 

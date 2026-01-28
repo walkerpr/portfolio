@@ -61,7 +61,7 @@
 
       <div class="sidebar-info_more">
 
-        <div class="separation"></div>
+        <div class="separator"></div>
 
         <ul class="contacts-list">
 
@@ -94,7 +94,7 @@
           </li>
         </ul>
 
-        <div class="separation"></div>
+        <div class="separator"></div>
 
         <ul class="social-list">
 
@@ -113,6 +113,7 @@
         </ul>
 
       </div>
+
       </aside>
 
       <!--
@@ -129,7 +130,7 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="nav-link  active" data-nav-link>About</button>
+            <button class="nav-link  " data-nav-link>About</button>
           </li>
 
           <li class="navbar-item">
@@ -161,11 +162,10 @@
       -->
 
         <article class="about active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About Me</h2>
-        </header>
-
+          <button class="collapsible active">
+         <h2 class="h2 article-title">About Me</h2>
+        </button>
+        <div class="content">
         <section class="about-text">
           <div class="about-item">
           <p class="large_text">
@@ -180,13 +180,15 @@
           </p>
         </div>
         </section>
+        </div>
         <!--
           - credentials
         -->
         <section class="service">
-        <button class="credentials_more-btn" data-collapse-btn>
+        <button class="collapsible active" data-collapse-btn>
             <h2 class="h2 article-title">Credentials</h2>
         </button>
+            <div class="content">
             <ul class="credentials-list" data-collapse>
               <li class="credentials-item">
 
@@ -222,17 +224,19 @@
                 </div>
               </li>
             </ul>
+          </div>
           </section>
+
         <!--
           - service
         -->
 
         <section class="service">
-        <button class="service_more-btn" data-collapse-btn>
-            <h2 class="h2 article-title">Expertise</h2>
+        <button class="collapsible active">
+          <h2 class="h2 article-title">Expertise</h2>
         </button>
-
-            <ul class="service-list" data-collapse>
+        <div class="content">
+            <ul class="service-list">
               <li class="service-item">
                 <div class="service-icon-box">
                   <img
@@ -328,52 +332,9 @@
                 </div>
               </li>
             </ul>
+          </div>
           </section>
 
-        <!--
-          - credentials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
 
       </article>
 
@@ -901,5 +862,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
   </body>
 </html>
