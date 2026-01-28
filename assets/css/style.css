@@ -557,7 +557,7 @@ main {
 }
 
 .nav-link {
-  color: var(--light-gray);
+  color: var(--white-1);
   font-size: var(--fs-8);
   padding: 20px 7px;
   transition: color var(--transition-1);
@@ -581,7 +581,7 @@ main {
 .about-text {
   color: black;
   font-size: var(--fs-6);
-  font-weight: var(--fw-300);
+  font-weight: var(--fw-300); 
   line-height: 1.6;
 
 }
