@@ -581,7 +581,7 @@ main {
 .about-text {
   color: black;
   font-size: var(--fs-6);
-  font-weight: var(--fw-300); 
+  font-weight: var(--fw-300);
   line-height: 1.6;
 
 }
@@ -645,12 +645,12 @@ main {
 .collapsible::after {
   content: '\002B';
   margin-bottom: 1px;
-  color: var(--gentle-blue);
+  color: var(--white-1);
 }
 
 .collapsible.active::after {
   content: "\2212";
-  color: var(--gentle-blue);
+  color: var(--white-1);
 }
 
 .content {
