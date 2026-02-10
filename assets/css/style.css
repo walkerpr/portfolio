@@ -452,7 +452,7 @@ main {
   top: -15px;
   right: -15px;
   border-radius: 0 15px;
-  font-size: 13px;
+  font-size: 10px;
   color: var(--white-1);
   background: var(--border-gradient-onyx);
   padding: 10px;
