@@ -246,7 +246,7 @@
     background-clip: text;
   }
  .project-title {
-    font-size: var(--fs-2);
+    font-size: var(--fs-4);
   }
   /* portfolio and blog grid */
  .project-list,
