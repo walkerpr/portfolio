@@ -1,25 +1,17 @@
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
-
-/**
- * responsive larger than 1250px screen (ex. Desktop)
- */
-
-@media (min-width: 1600px) {
+** * responsive larger than 1250px screen (ex. Desktop) */ media (min-width: 1600px) {
   :root {
     /**
   * shadow
   */
-
     --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
     --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.125);
     --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.125);
-
     /**
   * typography
   */
-
     --fs-1: 32px;
     --fs-2: 24px;
     --fs-3: 20px;
@@ -32,7 +24,6 @@
   /**
    * RESET
    */
-
   body::-webkit-scrollbar {
     width: 20px;
   }
@@ -61,7 +52,6 @@
   /**
    * #REUSED STYLE
    */
-
   .sidebar,
   article {
     width: 1250px;
@@ -89,7 +79,6 @@
   /**
    * MAIN
    */
-
   main {
     max-width: 1200px;
     margin-inline: auto;
@@ -110,7 +99,6 @@
   /**
    * SIDEBAR
    */
-
   .sidebar {
     position: sticky;
     max-height: max-content;
@@ -181,7 +169,6 @@
   /**
    * NAVBAR
    */
-
   .navbar {
     position: absolute;
     bottom: auto;
@@ -215,7 +202,6 @@
   }
 
   /* service */
-
   .service-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -227,7 +213,6 @@
     align-items: flex-start;
     padding-top: 5px;
     padding-left: 10px;
-
     justify-content: flex-start;
   }
 
@@ -246,18 +231,19 @@
     height: 60px;
     width: 60px;
   }
+
   /* credentials */
   .certifications-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5px 5px;
   }
+
   .credentials-item {
     min-width: calc(50% - 15px);
   }
 
   /* clients */
-
   .clients-item {
     min-width: calc(25% - 38px);
   }
@@ -265,7 +251,6 @@
   /**
    * PROJECTS
    */
-
   .article-title {
     padding-bottom: 20px;
   }
@@ -302,8 +287,8 @@
   .project-title {
     font-size: var(--fs-2);
   }
-  /* portfolio and blog grid */
 
+  /* portfolio and blog grid */
   .project-list,
   .blog-posts-list {
     grid-template-columns: 1fr 1fr;
@@ -316,7 +301,6 @@
   /**
    * BLOG
    */
-
   .blog-banner-box {
     height: 230px;
   }
@@ -324,18 +308,12 @@
   /**
 	 * RESUME
 	 */
-
   .timeline-text {
     max-width: 700px;
   }
 }
 
-/**
-* DEBUG
-*/
-
-/*
-Source - https://stackoverflow.com/a
-Posted by Justin Emlay, modified by community. See post 'Timeline' for change history
-Retrieved 2026-01-26, License - CC BY-SA 3.0
-*/
+** * DEBUG */ * Source - https: //stackoverflow.com/a
+Posted by Justin Emlay,
+modified by community. See post 'Timeline' for change history Retrieved 2026-01-26,
+License - CC BY-SA 3.0 */
