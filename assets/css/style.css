@@ -116,6 +116,9 @@
 
   /* font-family */
   --ff-poppins: "Poppins", sans-serif;
+  --ff-roboto: "Roboto", sans-serif;
+  --ff-merriweather: "Merriweather", sans-serif;
+  --ff-opensans: "Open Sans", sans-serif;
 
   /* font-size */
   --fs-1: 24px;
@@ -206,7 +209,8 @@ textarea {
 }
 
 html {
-  font-family: var(--ff-poppins);
+  font-family: var(--ff-opensans);
+  letter-spacing: .50px;
 }
 
 body {
@@ -401,9 +405,8 @@ main {
 
 .info-content .name {
   color: var(--white-2);
-  font-size: var(--fs-3);
+  font-size: var(--fs-2);
   font-weight: var(--fw-500);
-  letter-spacing: -0.25px;
   margin-bottom: 10px;
 }
 
@@ -411,7 +414,6 @@ main {
   color: var(--white-2);
   font-size: var(--fs-4);
   font-weight: var(--fw-500);
-  letter-spacing: -0.25px;
   margin-bottom: 5x;
   text-align: center;
   color: var(--light-gray-70);
@@ -421,7 +423,6 @@ main {
   color: var(--white-2);
   font-size: var(--fs-7);
   font-weight: var(--fw-400);
-  letter-spacing: -0.25px;
   margin-bottom: 5px;
   font-style: italic;
   text-align: center;
@@ -431,7 +432,6 @@ main {
   color: var(--white-2);
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
-  letter-spacing: -0.25px;
   margin-bottom: 5px;
   text-align: center;
 }
@@ -514,6 +514,9 @@ main {
 .contact-info {
   max-width: calc(100% - 50px);
   width: calc(100% - 46px);
+  color: var(--white-2);
+  font-size: var(--fs-7);
+  font: var(--ff-merriweather)
 }
 
 .contact-title {
@@ -526,10 +529,12 @@ main {
 .contact-info :is(.contact-link, time, address) {
   color: var(--white-2);
   font-size: var(--fs-7);
+  font: var(--ff-merriweather)
 }
 
 .contact-info address {
   font-style: normal;
+  font-family: var(--ff-merriweather)
 }
 
 .social-list {
@@ -602,12 +607,7 @@ main {
   margin-bottom: 15px;
 }
 
-.about-text {
-  color: black;
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
-  line-height: 1.6;
-}
+
 
 .about-text p {
   margin-bottom: 5px;
@@ -636,15 +636,15 @@ main {
 .about-item .text {
   color: black;
   font-size: var(--fs-6);
-  font-weight: var(--fw-3);
+  font-family: var(--ff-merriweather);
   line-height: 1.6;
   text-align: center;
 }
 
 .about-item .large_text {
   color: black;
-  font-size: var(--fs-4);
-  font-weight: var(--fw-3);
+  font-size: var(--fs-5);
+  font-family: var(--ff-merriweather);
   line-height: 1.6;
   text-align: center;
 }
@@ -764,6 +764,7 @@ main {
   color: black;
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
+  font-family: var(--ff-merriweather);
   line-height: 1.6;
 }
 
@@ -771,6 +772,7 @@ main {
   color: black;
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
+  font-family: var(--ff-merriweather);
   line-height: 1.6;
   font-style: italic;
 }
@@ -877,6 +879,7 @@ main {
   color: black;
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
+  font-family: var(--ff-merriweather);
   line-height: 1.6;
   display: -webkit-box;
   line-clamp: 4;
@@ -890,7 +893,7 @@ main {
   color: black;
   font-size: var(--fs-4);
   font-weight: var(--fw-400);
-  letter-spacing: -0.25px;
+  font-family: var(--ff-merriweather);
   margin-bottom: 5px;
   font-style: italic;
   text-align: center;
@@ -900,6 +903,7 @@ main {
   color: var(--gentle-blue);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
+  font-family: var(--ff-merriweather);
   line-height: 1.6;
   display: -webkit-box;
   line-clamp: 4;
@@ -1363,6 +1367,7 @@ main {
   color: var(--light-gray-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
+  font-family: var(--ff-merriweather);
 }
 
 /*-----------------------------------*\
