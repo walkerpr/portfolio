@@ -104,9 +104,9 @@
  .sidebar-info {
     flex-direction: column;
   }
+
  .avatar-box img {
     width: 175px;
-    border: 2px solid var(--gentle-blue);
   }
  .info-content .name {
     white-space: nowrap;
