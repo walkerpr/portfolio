@@ -1,7 +1,11 @@
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
-** * responsive larger than 1250px screen (ex. Desktop) */ media (min-width: 1600px) {
+/**
+ * responsive larger than 1250px screen (ex. Desktop)
+ */
+
+@media (min-width: 1600px) {
   :root {
     /**
   * shadow
@@ -9,7 +13,7 @@
     --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
     --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.125);
     --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.125);
-    /**
+   /**
   * typography
   */
     --fs-1: 32px;
@@ -20,19 +24,16 @@
     --fs-7: 15px;
     --fs-8: 12px;
   }
-
-  /**
+ /**
    * RESET
    */
-  body::-webkit-scrollbar {
+ body::-webkit-scrollbar {
     width: 20px;
   }
-
-  body::-webkit-scrollbar-track {
+ body::-webkit-scrollbar-track {
     background: var(--smoky-black);
   }
-
-  body::-webkit-scrollbar-thumb {
+ body::-webkit-scrollbar-thumb {
     border: 5px solid var(--smoky-black);
     background: hsla(0, 0%, 100%, 0.1);
     border-radius: 20px;
@@ -40,46 +41,39 @@
       inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
       inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
   }
-
-  body::-webkit-scrollbar-thumb:hover {
+ body::-webkit-scrollbar-thumb:hover {
     background: hsla(0, 0%, 100%, 0.15);
   }
-
-  body::-webkit-scrollbar-button {
+ body::-webkit-scrollbar-button {
     height: 60px;
   }
-
-  /**
+ /**
    * #REUSED STYLE
    */
-  .sidebar,
+ .sidebar,
   article {
     width: 1250px;
     margin-inline: auto;
     border-radius: 20px 20px 20px 20px;
     box-shadow: var(--shadow-5);
   }
-
-  .article-title {
+ .article-title {
     font-weight: var(--fw-600);
     padding-bottom: 15px;
   }
-
-  .article-title::after {
+ .article-title::after {
     width: 60px;
     height: 5px;
   }
-
-  .icon-box {
+ .icon-box {
     height: 48px;
     border-radius: 12px;
     font-size: 18px;
   }
-
-  /**
+ /**
    * MAIN
    */
-  main {
+ main {
     max-width: 1200px;
     margin-inline: auto;
     margin-top: 10px;
@@ -89,17 +83,15 @@
     align-items: stretch;
     gap: 25px;
   }
-
-  .main-content {
+ .main-content {
     position: relative;
     width: max-content;
     margin: auto;
   }
-
-  /**
+ /**
    * SIDEBAR
    */
-  .sidebar {
+ .sidebar {
     position: sticky;
     max-height: max-content;
     max-width: max-content;
@@ -109,55 +101,44 @@
     border-radius: 20px;
     z-index: 1;
   }
-
-  .sidebar-info {
+ .sidebar-info {
     flex-direction: column;
   }
-
-  .avatar-box img {
+ .avatar-box img {
     width: 175px;
     border: 2px solid var(--gentle-blue);
   }
-
-  .info-content .name {
+ .info-content .name {
     white-space: nowrap;
     text-align: center;
   }
-
-  .info-content .title {
+ .info-content .title {
     margin: auto;
   }
-
-  .info-more-btn {
+ .info-more-btn {
     display: none;
   }
-
-  .sidebar-info_more {
+ .sidebar-info_more {
     opacity: 1;
     visibility: visible;
   }
-
-  .contacts-list {
+ .contacts-list {
     grid-template-columns: 1fr;
   }
-
-  .contact-title {
+ .contact-title {
     margin-bottom: 2px;
   }
-
-  .contact-info :is(.contact-link) {
+ .contact-info :is(.contact-link) {
     white-space: wrap;
     font-size: var(--fs-7);
     overflow: visible;
     text-overflow: ellipsis;
   }
-
-  .contact-info :is(.contact-link, time, address) {
+ .contact-info :is(.contact-link, time, address) {
     --fs-7: 12px;
     font-weight: var(--fw-300);
   }
-
-  .social-list {
+ .social-list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,11 +146,10 @@
     padding-bottom: 4px;
     padding-left: 7px;
   }
-
-  /**
+ /**
    * NAVBAR
    */
-  .navbar {
+ .navbar {
     position: absolute;
     bottom: auto;
     top: 0;
@@ -180,86 +160,71 @@
     padding: 0 20px;
     box-shadow: none;
   }
-
-  .navbar-list {
+ .navbar-list {
     gap: 30px;
     padding: 0 20px;
   }
-
-  .nav-link {
+ .nav-link {
     font-weight: var(--fw-500);
   }
-
-  /**
+ /**
    * ABOUT
    */
   .about-item .large_text {
     text-align: left;
   }
-
-  .about-item .text {
+ .about-item .text {
     text-align: left;
   }
-
-  /* service */
-  .service-list {
+ /* service */
+ .service-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px 25px;
   }
-
-  .service-item {
+ .service-item {
     display: flex;
     align-items: flex-start;
     padding-top: 5px;
     padding-left: 10px;
-    justify-content: flex-start;
+   justify-content: flex-start;
   }
-
-  .service-icon-box {
+ .service-icon-box {
     margin-top: 20px;
     margin-bottom: 0px;
     margin-right: 20px;
   }
-
-  .service-item-title {
+ .service-item-title {
     text-align: left;
     margin-top: 17px;
   }
-
-  .service-icon-box img {
+ .service-icon-box img {
     height: 60px;
     width: 60px;
   }
-
   /* credentials */
   .certifications-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5px 5px;
   }
-
   .credentials-item {
     min-width: calc(50% - 15px);
   }
-
-  /* clients */
-  .clients-item {
+ /* clients */
+ .clients-item {
     min-width: calc(25% - 38px);
   }
-
-  /**
+ /**
    * PROJECTS
    */
-  .article-title {
+ .article-title {
     padding-bottom: 20px;
   }
-
-  .filter-select-box {
+ .filter-select-box {
     display: none;
   }
-
-  .filter-list {
+ .filter-list {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -267,53 +232,48 @@
     padding-left: 5px;
     margin-bottom: 30px;
   }
-
-  .filter-item button {
+ .filter-item button {
     color: var(--light-gray);
     font-size: var(--fs-3);
     transition: var(--transition-1);
   }
-
-  .filter-item button:hover {
+ .filter-item button:hover {
     color: var(--light-gray-70);
   }
-
-  .filter-item button.active {
+ .filter-item button.active {
     color: transparent;
     background: var(--text-gradient-blue);
     background-clip: text;
   }
-
-  .project-title {
+ .project-title {
     font-size: var(--fs-2);
   }
-
   /* portfolio and blog grid */
-  .project-list,
+ .project-list,
   .blog-posts-list {
     grid-template-columns: 1fr 1fr;
   }
-
-  .project-list {
+ .project-list {
     grid-template-columns: repeat(3, 1fr);
   }
-
-  /**
+ /**
    * BLOG
    */
-  .blog-banner-box {
+ .blog-banner-box {
     height: 230px;
   }
-
-  /**
+ /**
 	 * RESUME
 	 */
-  .timeline-text {
+ .timeline-text {
     max-width: 700px;
   }
 }
-
-** * DEBUG */ * Source - https: //stackoverflow.com/a
-Posted by Justin Emlay,
-modified by community. See post 'Timeline' for change history Retrieved 2026-01-26,
-License - CC BY-SA 3.0 */
+/**
+* DEBUG
+*/
+/*
+Source - https://stackoverflow.com/a
+Posted by Justin Emlay, modified by community. See post 'Timeline' for change history
+Retrieved 2026-01-26, License - CC BY-SA 3.0
+*/
