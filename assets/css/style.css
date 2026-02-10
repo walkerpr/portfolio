@@ -210,7 +210,7 @@ textarea {
 
 html {
   font-family: var(--ff-opensans);
-  letter-spacing: .50px;
+  letter-spacing: 0.5px;
 }
 
 body {
@@ -516,7 +516,7 @@ main {
   width: calc(100% - 46px);
   color: var(--white-2);
   font-size: var(--fs-7);
-  font: var(--ff-merriweather)
+  font: var(--ff-merriweather);
 }
 
 .contact-title {
@@ -529,12 +529,12 @@ main {
 .contact-info :is(.contact-link, time, address) {
   color: var(--white-2);
   font-size: var(--fs-7);
-  font: var(--ff-merriweather)
+  font: var(--ff-merriweather);
 }
 
 .contact-info address {
   font-style: normal;
-  font-family: var(--ff-merriweather)
+  font-family: var(--ff-merriweather);
 }
 
 .social-list {
@@ -606,8 +606,6 @@ main {
 .about .article-title {
   margin-bottom: 15px;
 }
-
-
 
 .about-text p {
   margin-bottom: 5px;
