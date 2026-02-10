@@ -1,22 +1,17 @@
 /*-----------------------------------*\
   #style.css
 \*-----------------------------------*/
-
 /**
  * copyright 2022 @codewithsadee
  */
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
-
 :root {
   /**
    * colors
    */
-
   /* gradient */
-
   --bg-gradient-onyx: linear-gradient(to bottom right,
       hsl(240, 1%, 25%) 3%,
       hsl(0, 0%, 19%) 97%);
@@ -58,15 +53,12 @@
       hsla(0, 0%, 25%) 50%);
   --border-gradient-blue: linear-gradient(hsl(208, 72.29%, 45.29%),
       hsl(190.02, 72.29%, 60.29%));
-
   --text-gradient-blue: linear-gradient(to right,
       hsl(208, 72.29%, 45.29%),
       hsl(190.02, 72.29%, 60.29%));
-
   --text-gradient-yellow: linear-gradient(to right,
       hsl(45, 100%, 72%),
       hsl(35, 100%, 68%));
-
   /* solid */
   --gold: hsl(42.8, 100%, 71.96%);
   --jet: hsl(0, 0%, 22%);
@@ -85,13 +77,11 @@
   /**
    * typography
    */
-
   /* font-family */
   --ff-poppins: "Poppins", sans-serif;
   --ff-roboto: "Roboto", sans-serif;
   --ff-merriweather: "Merriweather", sans-serif;
   --ff-opensans: "Open Sans", sans-serif;
-
   /* font-size */
   --fs-1: 24px;
   --fs-2: 22px;
@@ -101,27 +91,22 @@
   --fs-6: 14px;
   --fs-7: 13px;
   --fs-8: 11px;
-
   /* font-weight */
   --fw-300: 300;
   --fw-400: 400;
   --fw-500: 500;
   --fw-600: 600;
-
   /**
    * shadow
    */
-
   --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
   --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
   --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
   --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
   --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
-
   /**
    * transition
    */
-
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
 }
@@ -129,7 +114,6 @@
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
-
 *,
 *::before,
 *::after {
@@ -192,7 +176,6 @@ body {
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
-
 .sidebar,
 article {
   background: var(--eerie-black-2);
@@ -342,7 +325,6 @@ article.active {
 /*-----------------------------------*\
   #MAIN
 \*-----------------------------------*/
-
 main {
   margin: 15px 12px;
   margin-bottom: 75px;
@@ -352,11 +334,9 @@ main {
 /*-----------------------------------*\
   #SIDEBAR
 \*-----------------------------------*/
-
 .sidebar {
   margin-bottom: 5px;
   max-height: 112px;
-
   transition: var(--transition-2);
   border-radius: 20px 20px 0px 0px;
 }
@@ -534,7 +514,6 @@ main {
 /*-----------------------------------*\
   #NAVBAR
 \*-----------------------------------*/
-
 .navbar {
   position: relative;
   bottom: 0;
@@ -577,7 +556,6 @@ main {
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
-
 .about .article-title {
   margin-bottom: 15px;
 }
@@ -623,7 +601,6 @@ main {
 }
 
 /* Style the button that is used to open and close the collapsible content */
-
 .collapsible {
   background: none;
   padding: 0;
@@ -675,7 +652,6 @@ main {
 /**
  * #service
  */
-
 .service {
   margin-bottom: 5px;
 }
@@ -761,7 +737,6 @@ main {
 /**
  * #credentials
  */
-
 .credentials {
   margin-bottom: 30px;
 }
@@ -890,7 +865,6 @@ main {
 /**
  * #credentials-modal
  */
-
 .modal-container {
   position: fixed;
   top: 0;
@@ -1013,7 +987,6 @@ main {
 /**
  * #clients
  */
-
 .clients {
   margin-bottom: 15px;
 }
@@ -1051,7 +1024,6 @@ main {
 /*-----------------------------------*\
   #RESUME
 \*-----------------------------------*/
-
 .article-title {
   margin-bottom: 15px;
 }
@@ -1059,7 +1031,6 @@ main {
 /**
  * education and experience
  */
-
 .timeline {
   margin-bottom: 30px;
 }
@@ -1127,7 +1098,6 @@ main {
 /**
  * skills
  */
-
 .skills-title {
   margin-bottom: 20px;
 }
@@ -1169,7 +1139,6 @@ main {
 /*-----------------------------------*\
   #PORTFOLIO
 \*-----------------------------------*/
-
 .filter-list {
   display: none;
 }
@@ -1290,7 +1259,6 @@ main {
 
 .project-item-icon-box {
   --scale: 0.8;
-
   background: var(--jet);
   color: var(--gentle-blue);
   position: absolute;
@@ -1348,7 +1316,6 @@ main {
 /*-----------------------------------*\
   #BLOG
 \*-----------------------------------*/
-
 .blog-posts {
   margin-bottom: 10px;
 }
@@ -1440,7 +1407,6 @@ main {
 /*-----------------------------------*\
   #CONTACT
 \*-----------------------------------*/
-
 .mapbox {
   position: relative;
   height: 250px;
@@ -1567,7 +1533,6 @@ textarea.form-input::-webkit-resizer {
 /**
 * DEBUG
 */
-
 /*
 Source - https://stackoverflow.com/a
 Posted by Justin Emlay, modified by community. See post 'Timeline' for change history
