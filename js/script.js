@@ -140,3 +140,4 @@ for (let i = 0; i < collapsible.length; i++) {
     e.currentTarget.classList.toggle("active"),
   );
 }
+
