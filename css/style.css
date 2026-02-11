@@ -232,7 +232,6 @@ article {
 
 article.active {
   display: block;
-
 }
 
 @keyframes fade {
