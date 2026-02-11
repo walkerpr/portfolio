@@ -1311,7 +1311,7 @@ iframe {
 .project-title,
 .project-category,
 .project-environment{
-  margin-left: 10px;
+  text-align: center;
 }
 
 .project-title {
