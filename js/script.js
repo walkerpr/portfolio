@@ -133,8 +133,8 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
+// collapsible sections
 const collapsible = document.getElementsByClassName("collapsible");
-
 for (let i = 0; i < collapsible.length; i++) {
   collapsible[i].addEventListener("click", (e) =>
     e.currentTarget.classList.toggle("active"),
