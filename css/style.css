@@ -1109,6 +1109,7 @@ iframe {
   border-radius: 10px;
   animation: scaleUp 0.15s ease forwards;
   height: 450px;
+  width: 100%
 }
 /**
  * skills
