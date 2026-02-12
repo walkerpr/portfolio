@@ -232,7 +232,7 @@ article {
 
 article.active {
   display: block;
-  min-height: 500px;
+  min-height: 430px;
 }
 
 @keyframes fade {
