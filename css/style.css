@@ -2,7 +2,7 @@
   #style.css
 \*-----------------------------------*/
 /**
- * copyright 2026 @walkerpr
+ * copyright 2026  @walkerpr
  */
 /*-----------------------------------*\
   #CUSTOM PROPERTY
@@ -232,6 +232,7 @@ article {
 
 article.active {
   display: block;
+  min-height: 580px;
 }
 
 @keyframes fade {
@@ -1107,6 +1108,7 @@ iframe {
   border: 1px solid var(--gentle-blue);
   border-radius: 10px;
   animation: scaleUp 0.15s ease forwards;
+  height: 480px;
 }
 /**
  * skills
