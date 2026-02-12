@@ -198,6 +198,10 @@ article.active {
  .about-item .text {
     text-align: left;
   }
+.collapsible::after {
+  margin-top: 10px;
+}
+
  /* service */
  .service-list {
     display: grid;

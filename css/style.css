@@ -633,8 +633,7 @@ main {
   text-align: right;
   outline: none;
   display: flex;
-  gap: 15px;
-  justify-content: start;
+  justify-content: space-between;
 }
 
 .collapsible:hover {
@@ -643,13 +642,14 @@ main {
 }
 
 .collapsible::after {
-  content: "\002B";
+  content: "\2212";
+  margin-top: 4px;
   margin-bottom: 1px;
   color: var(--white-1);
 }
 
 .collapsible.active::after {
-  content: "\2212";
+  content: "\002B";
   color: var(--white-1);
   transition: var(--transition-2);
 }
