@@ -280,12 +280,29 @@ article.active {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 30px;
+  width: 100%;
   height: 3px;
   background: var(--bg-gradient-blue-3);
   border-radius: 4px;
 }
 
+.page-title {
+  position: relative;
+  visibility: hidden;
+  height: 0px;
+  text-align: justify;
+}
+
+.page-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 800px;
+  height: 6px;
+  background: var(--bg-gradient-blue-3);
+  border-radius: 4px;
+}
 .has-scrollbar::-webkit-scrollbar {
   width: 5px;
   /* for vertical scrollbar */
@@ -1032,10 +1049,6 @@ main {
 /*-----------------------------------*\
   #RESUME
 \*-----------------------------------*/
-.article-title {
-  margin-bottom: 15px;
-
-}
 
 /**
  * education and experience
