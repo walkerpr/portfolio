@@ -642,14 +642,14 @@ main {
 }
 
 .collapsible::after {
-  content: "\2212";
+  content: "\25BC";
   margin-top: 4px;
   margin-bottom: 1px;
   color: var(--white-1);
 }
 
 .collapsible.active::after {
-  content: "\002B";
+  content: "\25B2";
   color: var(--white-1);
   transition: var(--transition-2);
 }
