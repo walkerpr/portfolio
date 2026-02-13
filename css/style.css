@@ -83,6 +83,7 @@
   --ff-merriweather: "Merriweather", sans-serif;
   --ff-opensans: "Open Sans", sans-serif;
   /* font-size */
+  --fs-0: 30px;
   --fs-1: 24px;
   --fs-2: 22px;
   --fs-3: 17px;
@@ -169,7 +170,7 @@ textarea {
 
 html {
   font-family: var(--ff-opensans);
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 }
 
 body {
@@ -245,12 +246,17 @@ article.active {
   }
 }
 
+.h1,
 .h2,
 .h3,
 .h4,
 .h5 {
   color: var(--white-2);
   text-transform: capitalize;
+}
+
+.h1 {
+  font-size: var(--fs-0);
 }
 
 .h2 {
@@ -290,6 +296,7 @@ article.active {
   position: relative;
   visibility: hidden;
   height: 0px;
+  letter-spacing: 5px;
   text-align: justify;
 }
 
@@ -386,6 +393,7 @@ main {
   font-size: var(--fs-2);
   font-weight: var(--fw-500);
   margin-bottom: 10px;
+  letter-spacing: 2px;
 }
 
 .info-content .sub_name {
@@ -395,6 +403,7 @@ main {
   margin-bottom: 5x;
   text-align: center;
   color: var(--light-gray-70);
+  letter-spacing: 2px;
 }
 
 .info-content .large_text {
@@ -423,6 +432,7 @@ main {
   padding: 3px 12px;
   border-radius: 8px;
   outline: 1px solid var(--gentle-blue);
+
 }
 
 .info-more-btn {
@@ -502,6 +512,7 @@ main {
   font-size: var(--fs-8);
   text-transform: uppercase;
   margin-bottom: 2px;
+  letter-spacing: 2px;
 }
 
 .contact-info :is(.contact-link, time, address) {
@@ -582,6 +593,7 @@ main {
 \*-----------------------------------*/
 .about .article-title {
   margin-bottom: 15px;
+  letter-spacing: 2px;
 }
 
 .about-text p {
