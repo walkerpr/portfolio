@@ -171,10 +171,12 @@ textarea {
 html {
   font-family: var(--ff-opensans);
   letter-spacing: 1px;
+
 }
 
 body {
   background: var(--bg-gradient-blue-4);
+  overflow-x: hidden;
 }
 
 /*-----------------------------------*\
@@ -305,7 +307,7 @@ article.active {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 800px;
+  width: 65%;
   height: 6px;
   background: var(--bg-gradient-blue-3);
   border-radius: 4px;

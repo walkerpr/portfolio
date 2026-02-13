@@ -10,9 +10,12 @@
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
+
+
 /**
  * responsive larger than 1250px screen (ex. Desktop)
  */
+
 
 @media (min-width: 1600px) {
   :root {
