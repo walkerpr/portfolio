@@ -439,11 +439,11 @@ main {
   position: absolute;
   top: -15px;
   right: -15px;
-  border-radius: 0 15px;
+  border-radius: 0 20px;
   font-size: 10px;
   color: var(--white-1);
   background: var(--border-gradient-onyx);
-  padding: 5px;
+  padding: 7px;
   box-shadow: var(--shadow-2);
   transition: var(--transition-1);
   outline: 1px solid var(--gentle-blue);
