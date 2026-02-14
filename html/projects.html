@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patrick Walker Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../assets/images/icon-p.svg" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style-responsive.css">
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <!--
+    - #MAIN
+  -->
+  <main>
+    <aside class="sidebar" data-collapse>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="../images/my-avatar.png" alt="Patrick Walker" width="80">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Patrick Walker">Patrick Walker</h1>
+          <p class="title">Solutions Architect</p>
+        </div>
+        <button class="info-more-btn" data-collapse-btn>
+          <span>Show Contacts</span>Contact Info
+        </button>
+      </div>
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:walkerpatrickr@protonmail.com" class="contact-link">walkerpatrickr@protonmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+15305636115" class="contact-link">+1 (530) 563-6115</a>
+            </div>
+          </li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://github.com/walkerpr" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/walkerrpatrick/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <div class="main-content">
+      <!--
+        - #NAVBAR
+      -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+          <form style="display: inline" action="../index.html" method="get">
+            <button class="nav-link">About</button>
+          </form>
+          </li>
+          <li class="navbar-item">
+          <form style="display: inline" action="resume.html" method="get">
+            <button class="nav-link">Resume</button>
+          </form>
+          </li>
+          <li class="navbar-item">
+          <form style="display: inline" action="projects.html" method="get">
+            <button class="nav-link">Projects</button>
+          </form>
+          </li>
+        </ul>
+      </nav>
+      <!--
+        - #PROJECTS
+      -->
+      <article class="projects active" data-page="projects" id="projects">
+        <header>
+          <h2 class="h2 page-title">Projects</h2>
+        </header>
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Infrastructure Solutions</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Systems Automation</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Web Development</button>
+            </li>
+
+          </ul>
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <span class="select-value" data-select-value>
+                Filter By Project Type
+              </span>
+              <span class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </span>
+            </button>
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Infrastructure Solutions</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Systems Automation</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Web Development</button>
+              </li>
+            </ul>
+          </div>
+          <ul class="project-list">
+            <li class="project-item active" data-filter-item data-category="infrastructure solutions">
+              <a href="https://github.com/walkerpr/aws_kubernetes_infrastructure_with_central_services">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="../images/project-1.png" alt="fundo" loading="eager">
+                </figure>
+                <h3 class="project-title">Scalable Kubernetes Dev Environment</h3>
+                <p class="project-category">Infrastructure Solutions</p>
+                <p class="project-environment">AWS (GovCloud)</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="systems automation">
+              <a href="https://github.com/walkerpr/aws_workspaces_onboarding_govcloud">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="../images/project-2.png" alt="workspaces" loading="eager">
+                </figure>
+                <h3 class="project-title">AWS WorkSpaces Onboarding Scripts</h3>
+                <p class="project-category">Systems Automation</p>
+                <p class="project-environment">AWS (GovCloud)</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="systems automation">
+              <a href="https://github.com/walkerpr/aws_kubernetes_user_provisioned_playbooks">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="../images/project-3.png" alt="kubernetes" loading="eager">
+                </figure>
+                <h3 class="project-title">Kubernetes Deployment Playbooks</h3>
+                <p class="project-category">Systems Automation</p>
+                <p class="project-environment">AWS (GovCloud)</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="systems automation">
+              <a href="https://github.com/walkerpr/aws_openshift_installer_provisioned_playbooks">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="../images/project-4.png" alt="openshift" loading="eager">
+                </figure>
+                <h3 class="project-title">OpenShift Deployment Playbooks</h3>
+                <p class="project-category">Systems Automation</p>
+                <p class="project-environment">AWS (GovCloud)</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://github.com/walkerpr/portfolio">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="../images/project-5.png" alt="portfolio" loading="eager">
+                </figure>
+                <h3 class="project-title">Portfolio Website</h3>
+                <p class="project-category">Web Development</p>
+                <p class="project-environment">GitHub</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </div>
+  </main>
+  <!--
+    - custom js link
+  -->
+  <script src="../js/script.js"></script>
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
