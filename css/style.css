@@ -668,12 +668,6 @@ main {
   transition: var(--transition-2);
 }
 
-.content {
-  padding: 0 0;
-  overflow: hidden;
-  animation: scaleUp 0.15s ease forwards;
-}
-
 .collapsible+.content {
   max-height: 0;
 }
@@ -682,10 +676,10 @@ main {
   max-height: none;
 }
 
-/* Style the collapsible content. Note: hidden by default */
 .content {
-  padding: 0 18px;
   overflow: hidden;
+  animation: scaleUp 0.15s ease forwards;
+  padding: 0 0;
 }
 
 /**
@@ -748,6 +742,7 @@ main {
   font-weight: var(--fw-500);
 }
 
+
 .service-item .text {
   color: black;
   font-size: var(--fs-6);
@@ -787,10 +782,8 @@ main {
 .credentials-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 15px;
-  margin: 0 -15px;
-  padding: 5px 15px;
-  padding-bottom: 5px;
+  gap: 5px;
+  padding: 0px 0px 5px;
   overflow-x: auto;
   scroll-behavior: smooth;
   overscroll-behavior-inline: contain;
@@ -858,7 +851,7 @@ main {
   background: var(--text-gradient-blue);
   background-clip: text;
   color: transparent;
-  font-size: var(--fs-2);
+  font-size: var(--fs-5);
   font-weight: var(--fw-500);
 }
 
@@ -1203,6 +1196,7 @@ iframe {
   border-radius: 14px;
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
+  letter-spacing: 1.5px;
 }
 
 .filter-select.active .select-icon {
@@ -1235,6 +1229,7 @@ iframe {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
+  letter-spacing: 1.5px;
   text-transform: capitalize;
   width: 100%;
   padding: 8px 10px;
