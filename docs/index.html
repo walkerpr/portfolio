@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patrick Walker Portfolio</title>
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../images/icon-p.svg" type="image/x-icon">
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style-responsive.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--
+    - #MAIN
+  -->
+  <main>
+    <!--
+      - #SIDEBAR
+    -->
+    <aside class="sidebar" data-collapse>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="../images/my-avatar.png" alt="Patrick Walker" width="80">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Patrick Walker">Patrick Walker</h1>
+          <p class="title">Solutions Architect</p>
+        </div>
+        <button class="info-more-btn" data-collapse-btn>
+          <span>Show Contacts</span>Contact Info
+        </button>
+      </div>
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:walkerpatrickr@protonmail.com" class="contact-link">walkerpatrickr@protonmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+15305636115" class="contact-link">+1 (530) 563-6115</a>
+            </div>
+          </li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://github.com/walkerpr" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/walkerrpatrick/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!--
+      - #main-content
+    -->
+    <div class="main-content">
+      <!--
+        - #NAVBAR
+      -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+          <form style="display: inline" action="index.html" method="get">
+            <button class="nav-link">About</button>
+          </form>
+          </li>
+          <li class="navbar-item">
+          <form style="display: inline" action="resume.html" method="get">
+            <button class="nav-link">Resume</button>
+          </form>
+          </li>
+          <li class="navbar-item">
+          <form style="display: inline" action="projects.html" method="get">
+            <button class="nav-link">Projects</button>
+          </form>
+          </li>
+        </ul>
+      </nav>
+      <!--
+        - #ABOUT
+      -->
+      <article class="about active" data-page="about" id="about">
+        <header>
+          <h2 class="h2 page-title"> About</h2>
+        </header>
+        <button class="collapsible active">
+          <span class="h3 article-title">Summary</span>
+        </button>
+        <div class="content">
+          <div class="about-item">
+            <p class="text">
+              Solutions Architect with a foundation in cloud administration and devops.
+            </p>
+            <p class="text">
+              Ten (10) years of experience with the Department of Defense(DoD).
+            </p>
+            <p class="text">A military veteran.</p>
+          </div>
+        </div>
+        <!--
+          - credentials
+        -->
+        <section class="service">
+          <button class="collapsible active">
+            <span class="h3 article-title">Credentials</span>
+          </button>
+          <div class="content">
+            <ul class="credentials-list" data-collapse>
+              <li class="credentials-item">
+                <div class="credentials-content-box">
+                  <h4 class="h4 credentials-item-title">EDUCATION</h4>
+                  <div class="service-separator"></div>
+                  <p class="large_text">National University</p>
+                  <p class="text">Bachelor of Science</p>
+                  <p class="text">Cybersecurity</p>
+                </div>
+              </li>
+              <li class="credentials-item">
+                <div class="credentials-content-box">
+                  <h4 class="h4 credentials-item-title">CERTIFICATIONS</h4>
+                  <div class="service-separator"></div>
+                  <ul class="certifications-list">
+                    <li class="test-item">
+                      <p class="large_text">CompTIA</p>
+                      <a href="pdf/security+_certificate.pdf">
+                        <p class="hyperlink_text">Security+</p>
+                      </a>
+                    </li>
+                    <li class="test-item">
+                      <p class="large_text">Scrum Alliance</p>
+                      <a href="pdf/scrum_master.pdf">
+                        <p class="hyperlink_text">Certified Scrum Master</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="credentials-item">
+                <div class="credentials-content-box">
+                  <h4 class="h4 credentials-item-title">CLEARANCE</h4>
+                  <div class="service-separator"></div>
+                  <p class="large_text">Department of Defense</p>
+                  <p class="text">Top Secret/SCI</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!--
+          - service
+        -->
+        <section class="service">
+          <button class="collapsible active">
+            <span class="h3 article-title">Expertise</span>
+          </button>
+          <div class="content">
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="../images/icon-aws.svg" alt="AWS icon" width="70">
+                </div>
+                <div class="service-content-box">
+                  <h4 class="service-item-title">CLOUD ARCHITECTURE</h4>
+                  <div class="service-separator"></div>
+                  <p class="text">
+                    Eight (8) years of experience in architecting and
+                    deploying solutions in the following cloud environments:
+                  </p>
+                  <p class="italic_text">- Amazon Web Services (AWS)</p>
+                  <p class="italic_text">- Microsoft Azure</p>
+                  <p class="text">
+                    This includes in commercial and govcloud impact level
+                    (IL)5 and 6 regions.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="../images/icon-kubernetes.svg" alt="Kubernetes icon" width="70">
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    KUBERNETES ADMINISTRATION
+                  </h4>
+                  <div class="service-separator"></div>
+                  <p class="text">
+                    Five (5) years of experience leveraging the following
+                    container-hosting platforms:
+                  </p>
+                  <p class="italic_text">- Red Hat OpenShift</p>
+                  <p class="italic_text">- Rancher</p>
+                  <p class="italic_text">
+                    - AWS Elastic Kubernetes Service (EKS)
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="../images/icon-terraform.svg" alt="Terraform icon" width="70">
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    INFRASTRUCTURE AS CODE (IAC)
+                  </h4>
+                  <div class="service-separator"></div>
+                  <p class="text">
+                    Six (6) years of experience in leveraging IaC for
+                    automated deployment and maintenance of environments via
+                    the following tools:
+                  </p>
+                  <p class="italic_text">- Ansible</p>
+                  <p class="italic_text">- Terraform</p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="../images/icon-redhat.svg" alt="Systemin Administration icon" width="70">
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">SYSTEM ADMINISTRATION</h4>
+                  <div class="service-separator"></div>
+                  <p class="text">
+                    Twelve (12) years of experience administrating servers and
+                    end-user devices. This includes the following operating
+                    systems:
+                  </p>
+                  <p class="italic_text">
+                    - Red Hat Enterprise Linux 6, 7, 8 and 9
+                  </p>
+                  <p class="italic_text">- Windows Server 2016, 2019, 2022</p>
+                  <p class="italic_text">- Amazon Linux 2, 2023</p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="../images/icon-compliance.svg" alt="Compliance icon" width="70">
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    RISK MANAGEMENT FRAMEWORK
+                  </h4>
+                  <div class="service-separator"></div>
+                  <p class="text">
+                    Eight (8) years of experience assigning and enforcing the
+                    following technical security controls:
+                  </p>
+                  <p class="italic_text">- NIST 800-53</p>
+                  <p class="italic_text">- NIST 800-171</p>
+                  <p class="text">
+                    This resulted in the acquitision of five (5)
+                    Authority-to-Operate (ATO) awards for Department of Navy
+                    (DoN) projects.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+  <!--
+    - custom js link
+  -->
+  <script src="../js/script.js"></script>
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -212,7 +212,6 @@ article {
   box-shadow: var(--shadow-1);
   background: var(--gentle-blue);
   z-index: 1;
-  animation: scaleUp 0.25s ease forwards;
 }
 
 .icon-box::before {

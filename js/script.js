@@ -14,6 +14,14 @@ collapseBtn.addEventListener("click", function () {
   elementToggleFunc(collapse);
 });
 
+// collapsible sections
+const collapsible = document.getElementsByClassName("collapsible");
+for (let i = 0; i < collapsible.length; i++) {
+  collapsible[i].addEventListener("click", (e) =>
+    e.currentTarget.classList.toggle("active"),
+  );
+}
+
 // testimonials variables
 const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
@@ -133,10 +141,8 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-// collapsible sections
-const collapsible = document.getElementsByClassName("collapsible");
-for (let i = 0; i < collapsible.length; i++) {
-  collapsible[i].addEventListener("click", (e) =>
-    e.currentTarget.classList.toggle("active"),
-  );
-}
+
+
+// Source - https://stackoverflow.com/a/31837264
+// Posted by mwiegboldt, modified by community. See post 'Timeline' for change history
+// Retrieved 2026-02-13, License - CC BY-SA 4.0
