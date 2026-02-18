@@ -715,14 +715,12 @@ main {
   z-index: -1;
 }
 
-.service-icon-box {
-  margin-bottom: 10px;
-}
 
 .service-icon-box img {
   margin: auto;
-  height: 70px;
-  width: 70px;
+  margin-bottom: 20px;
+  height: 60px;
+  width: 60px;
 }
 
 .service-content-box {
@@ -737,7 +735,7 @@ main {
   background: var(--text-gradient-blue);
   background-clip: text;
   color: transparent;
-  font-size: var(--fs-2);
+  font-size: var(--fs-5);
   font-weight: var(--fw-500);
 }
 
@@ -750,10 +748,10 @@ main {
   line-height: 1.6;
 }
 
-.service-item .italic_text {
+.service-item .list_text {
   color: black;
   font-size: var(--fs-6);
-  font-weight: var(--fw-3);
+  font-weight: bold;
   font-family: var(--ff-merriweather);
   line-height: 1.6;
   font-style: italic;
@@ -793,7 +791,7 @@ main {
   position: relative;
   padding: 10px;
   z-index: 1;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
   justify-content: left;
 }
 
@@ -809,6 +807,7 @@ main {
 .credentials-item {
   position: relative;
   background: var(--border-gradient-blue);
+  margin-bottom: 0px;
   padding: 2px;
   border-radius: 5px;
   box-shadow: var(--shadow-2);
