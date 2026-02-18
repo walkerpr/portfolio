@@ -221,23 +221,25 @@ article.active {
  .service-item {
     display: flex;
     align-items: flex-start;
-    padding-top: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 10px;
    justify-content: flex-start;
   }
  .service-icon-box {
-    margin-top: 20px;
     margin-bottom: 0px;
     margin-right: 20px;
   }
  .service-item-title {
     text-align: left;
-    margin-top: 17px;
+    margin-top: 0px;
     font-size: var(--fs-2);
   }
  .service-icon-box img {
-    height: 60px;
-    width: 60px;
+    height: 80px;
+    width: 80px;
+    margin-top: 50%;
+    margin-bottom: 0px;
   }
   /* credentials */
   .certifications-list {
