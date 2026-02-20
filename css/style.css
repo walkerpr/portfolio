@@ -29,7 +29,7 @@
       hsla(35, 100%, 68%, 0) 59.86%),
     hsl(240, 2%, 13%);
   --bg-gradient-blue-1: linear-gradient(to bottom right,
-      hsl(208, 72.29%, 45.29%),
+      hsl(208.55, 72.09%, 33.73%),
       hsla(36, 100%, 69%, 0) 50%);
   --bg-gradient-blue-2:
     linear-gradient(to bottom right,
@@ -37,10 +37,10 @@
       hsla(35, 100%, 68%, 0) 59.86%),
     hsl(240, 2%, 13%);
   --bg-gradient-blue-3: linear-gradient(to right,
-      hsl(208, 72.29%, 45.29%),
+      hsl(208.55, 72.09%, 33.73%),
       hsl(190.02, 72.29%, 60.29%));
   --bg-gradient-blue-4: linear-gradient(to right,
-      hsl(208, 72.29%, 45.29%),
+      hsl(208.55, 72.09%, 33.73%),
       hsla(240, 2%, 12%) 55%);
   --bg-gradient-white: linear-gradient(to top left,
       hsl(0, 0%, 0%, 0.993),
@@ -51,10 +51,10 @@
   --border-gradient-white: linear-gradient(to bottom right,
       hsl(0, 0%, 88%) 0%,
       hsla(0, 0%, 25%) 50%);
-  --border-gradient-blue: linear-gradient(hsl(208, 72.29%, 45.29%),
+  --border-gradient-blue: linear-gradient(hsl(208.55, 72.09%, 33.73%),
       hsl(190.02, 72.29%, 60.29%));
   --text-gradient-blue: linear-gradient(to right,
-      hsl(208, 72.29%, 45.29%),
+      hsl(208.55, 72.09%, 33.73%),
       hsl(190.02, 72.29%, 60.29%));
   --text-gradient-yellow: linear-gradient(to right,
       hsl(45, 100%, 72%),
@@ -73,7 +73,7 @@
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
-  --gentle-blue: hsl(208, 72.29%, 45.29%);
+  --gentle-blue: hsl(208.55, 72.09%, 33.73%);
   /**
    * typography
    */
