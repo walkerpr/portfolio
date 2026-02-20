@@ -73,7 +73,9 @@
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
-  --gentle-blue: hsl(208.55, 72.09%, 33.73%);
+  --deep-blue: hsl(208.55, 72.09%, 33.73%);
+  --gentle-blue: hsl(208.52, 62.24%, 61.57%);
+
   /**
    * typography
    */
@@ -160,12 +162,12 @@ textarea {
 }
 
 ::selection {
-  background: var(--gentle-blue);
+  background: var(--deep-blue);
   color: var(--smoky-black);
 }
 
 :focus {
-  outline-color: var(--gentle-blue);
+  outline-color: var(--deep-blue);
 }
 
 html {
@@ -185,7 +187,7 @@ body {
 .sidebar,
 article {
   background: var(--eerie-black-2);
-  border: 1px solid var(--gentle-blue);
+  border: 1px solid var(--deep-blue);
   border-radius: 0px 0px 20px 20px;
   padding: 15px;
   box-shadow: var(--shadow-1);
@@ -208,9 +210,9 @@ article {
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  color: var(--gentle-blue);
+  color: var(--deep-blue);
   box-shadow: var(--shadow-1);
-  background: var(--gentle-blue);
+  background: var(--deep-blue);
   z-index: 1;
 }
 
@@ -280,6 +282,7 @@ article.active {
 .article-title {
   position: relative;
   padding-bottom: 7px;
+  font-family: var(--ff-merriweather);
 }
 
 .article-title::after {
@@ -299,6 +302,7 @@ article.active {
   height: 0px;
   letter-spacing: 5px;
   text-align: justify;
+  font-family: var(--ff-merriweather);
 }
 
 .page-title::after {
@@ -324,7 +328,7 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
-  background: var(--gentle-blue);
+  background: var(--deep-blue);
   border-radius: 5px;
 }
 
@@ -386,7 +390,7 @@ main {
 
  .avatar-box img {
     border-radius: 20px;
-    border: 2px solid var(--gentle-blue);
+    border: 2px solid var(--deep-blue);
   }
 
 .info-content .name {
@@ -395,6 +399,7 @@ main {
   font-weight: var(--fw-500);
   margin-bottom: 10px;
   letter-spacing: 2px;
+  font-family: var( --ff-merriweather);
 }
 
 .info-content .sub_name {
@@ -405,6 +410,7 @@ main {
   text-align: center;
   color: var(--light-gray-70);
   letter-spacing: 2px;
+  font-family: var( --ff-merriweather);
 }
 
 .info-content .large_text {
@@ -414,6 +420,7 @@ main {
   margin-bottom: 5px;
   font-style: italic;
   text-align: center;
+  font-family: var(--ff-opensans);
 }
 
 .info-content .text {
@@ -422,6 +429,7 @@ main {
   font-weight: var(--fw-300);
   margin-bottom: 5px;
   text-align: center;
+  font-family: var(--ff-opensans);
 }
 
 .info-content .title {
@@ -432,7 +440,7 @@ main {
   width: max-content;
   padding: 3px 12px;
   border-radius: 8px;
-  outline: 1px solid var(--gentle-blue);
+  outline: 1px solid var(--deep-blue);
 
 }
 
@@ -447,7 +455,7 @@ main {
   padding: 7px;
   box-shadow: var(--shadow-2);
   transition: var(--transition-1);
-  outline: 1px solid var(--gentle-blue);
+  outline: 1px solid var(--deep-blue);
   z-index: 1;
 }
 
@@ -509,22 +517,17 @@ main {
 }
 
 .contact-title {
-  color: var(--gentle-blue);
+  color: var(--deep-blue);
   font-size: var(--fs-8);
   text-transform: uppercase;
   margin-bottom: 2px;
   letter-spacing: 2px;
+  font-family: var( --ff-merriweather);
 }
 
 .contact-info :is(.contact-link, time, address) {
   color: var(--white-2);
   font-size: var(--fs-7);
-  font: var(--ff-merriweather);
-}
-
-.contact-info address {
-  font-style: normal;
-  font-family: var(--ff-merriweather);
 }
 
 .social-list {
@@ -538,7 +541,7 @@ main {
 }
 
 .social-item .social-link {
-  color: var(--gentle-blue);
+  color: var(--deep-blue);
   font-size: 40px;
   align-content: center;
 }
@@ -556,7 +559,7 @@ main {
   left: 0;
   width: 100%;
   background: var(--eerie-black-2);
-  border: 1px solid var(--gentle-blue);
+  border: 1px solid var(--deep-blue);
   border-radius: 0px;
   box-shadow: var(--shadow-2);
   z-index: 5;
@@ -576,6 +579,7 @@ main {
   font-size: var(--fs-2);
   padding: 20px 7px;
   transition: color var(--transition-1);
+  font-family: var(--ff-merriweather);
 }
 
 .nav-link:hover,
@@ -624,7 +628,7 @@ main {
 .about-item .text {
   color: black;
   font-size: var(--fs-6);
-  font-family: var(--ff-merriweather);
+  font-family: var(--ff-opensans);
   line-height: 1.6;
   text-align: center;
 }
@@ -632,7 +636,7 @@ main {
 .about-item .large_text {
   color: black;
   font-size: var(--fs-5);
-  font-family: var(--ff-merriweather);
+  font-family: var(--ff-opensans);
   line-height: 1.6;
   text-align: center;
 }
@@ -727,16 +731,17 @@ main {
   text-align: left;
 }
 
-.service-item-title {
-  text-decoration-color: var(--bg-gradient-blue-4);
+.service-item .title {
   margin-left: 5px;
   margin-right: 5px;
   text-align: center;
   background: var(--text-gradient-blue);
   background-clip: text;
-  color: transparent;
+  color: var(--deep-blue);
   font-size: var(--fs-5);
   font-weight: var(--fw-500);
+  font-family: var( --ff-merriweather);
+  letter-spacing: 1px;
 }
 
 
@@ -744,7 +749,6 @@ main {
   color: black;
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
-  font-family: var(--ff-merriweather);
   line-height: 1.6;
 }
 
@@ -752,7 +756,6 @@ main {
   color: black;
   font-size: var(--fs-6);
   font-weight: bold;
-  font-family: var(--ff-merriweather);
   line-height: 1.6;
   font-style: italic;
 }
@@ -841,23 +844,23 @@ main {
   margin: auto;
 }
 
-.credentials-item-title {
-  text-decoration-color: var(--bg-gradient-blue-4);
+.credentials-item .title {
   margin-left: 5px;
   margin-right: 5px;
   text-align: center;
   background: var(--text-gradient-blue);
   background-clip: text;
-  color: transparent;
-  font-size: var(--fs-5);
+  color: var(--deep-blue);
+  font-size: var(--fs-2);
   font-weight: var(--fw-500);
+  font-family: var(--ff-merriweather);
+  letter-spacing: 1px;
 }
 
 .credentials-item .text {
   color: black;
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
-  font-family: var(--ff-merriweather);
   line-height: 1.6;
   display: -webkit-box;
   line-clamp: 4;
@@ -865,23 +868,24 @@ main {
   -webkit-box-orient: vertical;
   text-align: center;
   overflow: hidden;
+  letter-spacing: 1px;
 }
 
 .credentials-item .large_text {
-  color: black;
+  color: var(--gentle-blue);
   font-size: var(--fs-4);
-  font-weight: var(--fw-400);
+  font-weight: var(--fw-600);
   font-family: var(--ff-merriweather);
   margin-bottom: 5px;
   font-style: italic;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 .credentials-item .hyperlink_text {
-  color: var(--gentle-blue);
+  color: var(--deep-blue);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
-  font-family: var(--ff-merriweather);
   line-height: 1.6;
   display: -webkit-box;
   line-clamp: 4;
@@ -1123,7 +1127,7 @@ main {
 }
 
 iframe {
-  border: 1px solid var(--gentle-blue);
+  border: 1px solid var(--deep-blue);
   border-radius: 10px;
   animation: scaleUp 0.15s ease forwards;
   height: 450px;
@@ -1275,7 +1279,7 @@ iframe {
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 15px;
-  border: 1px solid var(--gentle-blue)
+  border: 1px solid var(--deep-blue)
 }
 
 .project-img::before {
@@ -1298,7 +1302,7 @@ iframe {
 .project-item-icon-box {
   --scale: 0.8;
   background: var(--jet);
-  color: var(--gentle-blue);
+  color: var(--deep-blue);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1356,7 +1360,6 @@ iframe {
 .project-environment {
   color: var(--gentle-blue);
   font-size: var(--fs-8);
-  font-family: var(--ff-poppins);
   font-weight: var(--fw-300);
   margin-bottom: 5px;
 
@@ -1443,7 +1446,7 @@ iframe {
 }
 
 .blog-post-item>a:hover .blog-item-title {
-  color: var(--gentle-blue);
+  color: var(--deep-blue);
 }
 
 .blog-text {
@@ -1507,7 +1510,7 @@ iframe {
 }
 
 .form-input:focus {
-  border-color: var(--gentle-blue);
+  border-color: var(--deep-blue);
 }
 
 textarea.form-input {
@@ -1530,7 +1533,7 @@ textarea.form-input::-webkit-resizer {
   position: relative;
   width: 100%;
   background: var(--border-gradient-onyx);
-  color: var(--gentle-blue);
+  color: var(--deep-blue);
   display: flex;
   justify-content: center;
   align-items: center;
