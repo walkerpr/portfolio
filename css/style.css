@@ -613,7 +613,6 @@ main {
   box-shadow: var(--shadow-2);
   z-index: 1;
   margin-bottom: 5px;
-  justify-content: left;
 }
 
 .about-item::before {
@@ -630,7 +629,7 @@ main {
   font-size: var(--fs-6);
   font-family: var(--ff-opensans);
   line-height: 1.6;
-  text-align: center;
+  text-align: left;
 }
 
 .about-item .large_text {
@@ -638,7 +637,7 @@ main {
   font-size: var(--fs-5);
   font-family: var(--ff-opensans);
   line-height: 1.6;
-  text-align: center;
+  text-align: left;
 }
 
 /* Style the button that is used to open and close the collapsible content */
@@ -703,7 +702,7 @@ main {
 .service-item {
   position: relative;
   background: var(--border-gradient-blue);
-  padding: 20px;
+  padding: 15px 5px 5px 5px;
   border-radius: 5px;
   box-shadow: var(--shadow-2);
   z-index: 1;
@@ -738,7 +737,7 @@ main {
   background: var(--text-gradient-blue);
   background-clip: text;
   color: var(--deep-blue);
-  font-size: var(--fs-5);
+  font-size: var(--fs-6);
   font-weight: var(--fw-500);
   font-family: var( --ff-merriweather);
   letter-spacing: 1px;
@@ -760,12 +759,12 @@ main {
   font-style: italic;
 }
 
-.service-separator {
+.service .separator {
   width: 100%;
   height: 2px;
   background: var(--bg-gradient-blue-3);
-  margin-top: 0px;
-  margin-bottom: 10px;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 
 /**
@@ -792,7 +791,7 @@ main {
 
 .credentials-content-box {
   position: relative;
-  padding: 10px;
+  padding: 5px;
   z-index: 1;
   margin-bottom: 0px;
   justify-content: left;
@@ -851,10 +850,11 @@ main {
   background: var(--text-gradient-blue);
   background-clip: text;
   color: var(--deep-blue);
-  font-size: var(--fs-2);
+  font-size: var(--fs-6);
   font-weight: var(--fw-500);
   font-family: var(--ff-merriweather);
   letter-spacing: 1px;
+  margin-bottom: 2px;
 }
 
 .credentials-item .text {
@@ -876,7 +876,7 @@ main {
   font-size: var(--fs-4);
   font-weight: var(--fw-600);
   font-family: var(--ff-merriweather);
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   font-style: italic;
   text-align: center;
   letter-spacing: 1px;
@@ -1132,6 +1132,14 @@ iframe {
   animation: scaleUp 0.15s ease forwards;
   height: 450px;
   width: 100%
+}
+
+.pdfViewer {
+  --scale-factor: 1;
+  --page-bg-color: unset;
+  padding-bottom: var(--pdfViewer-padding-bottom);
+  --hcm-highlight-filter: none;
+  --hcm-highlight-selected-filter: none;
 }
 /**
  * skills
