@@ -18,6 +18,7 @@ for (let i = 0; i < collapsible.length; i++) {
 // testimonials variables
 const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
+const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
 const overlay = document.querySelector("[data-overlay]");
 
 // modal variable
@@ -46,6 +47,11 @@ for (let i = 0; i < testimonialsItem.length; i++) {
     testimonialsModalFunc();
   });
 }
+
+// add click event to modal close button
+modalCloseBtn.addEventListener("click", testimonialsModalFunc);
+overlay.addEventListener("click", testimonialsModalFunc);
+
 
 // custom select variables
 const selectData = document.querySelector("[data-select]");
@@ -131,4 +137,3 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   });
 }
-
