@@ -1,18 +1,11 @@
-"use strict";
+
 
 // element toggle function
 const elementToggleFunc = function (elem) {
   elem.classList.toggle("active");
 };
 
-// collapse variables
-const collapse = document.querySelector("[data-collapse]");
-const collapseBtn = document.querySelector("[data-collapse-btn]");
 
-// collapse toggle functionality for mobile
-collapseBtn.addEventListener("click", function () {
-  elementToggleFunc(collapse);
-});
 
 // collapsible sections
 const collapsible = document.getElementsByClassName("collapsible");
@@ -55,12 +48,12 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 }
 
 // custom select variables
-const select = document.querySelector("[data-select]");
+const selectData = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
 const selectValue = document.querySelector("[data-select-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
-select.addEventListener("click", function () {
+selectData.addEventListener("click", function () {
   elementToggleFunc(this);
 });
 
@@ -69,7 +62,7 @@ for (let i = 0; i < selectItems.length; i++) {
   selectItems[i].addEventListener("click", function () {
     let selectedValue = this.innerText.toLowerCase();
     selectValue.innerText = this.innerText;
-    elementToggleFunc(select);
+    elementToggleFunc(selectData);
     filterFunc(selectedValue);
   });
 }
@@ -90,7 +83,7 @@ const filterFunc = function (selectedValue) {
 };
 
 // add event in all filter button items for large screen
-let lastClickedBtn = filterBtn[0];
+lastClickedBtn = filterBtn[0];
 
 for (let i = 0; i < filterBtn.length; i++) {
   filterBtn[i].addEventListener("click", function () {
@@ -121,9 +114,7 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
-// page navigation variables
-const navigationLinks = document.querySelectorAll("[data-nav-link]");
-const pages = document.querySelectorAll("[data-page]");
+
 
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
@@ -140,9 +131,3 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   });
 }
-
-
-
-// Source - https://stackoverflow.com/a/31837264
-// Posted by mwiegboldt, modified by community. See post 'Timeline' for change history
-// Retrieved 2026-02-13, License - CC BY-SA 4.0

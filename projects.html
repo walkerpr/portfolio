@@ -10,13 +10,13 @@
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="../assets/images/icon-p.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="images/icon-p.svg" type="image/x-icon">
 
   <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/style-responsive.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-responsive.css">
   <!--
     - google font link
   -->
@@ -33,79 +33,14 @@
     - #MAIN
   -->
   <main>
-    <aside class="sidebar" data-collapse>
-      <div class="sidebar-info">
-        <figure class="avatar-box">
-          <img src="../images/my-avatar.png" alt="Patrick Walker" width="80">
-        </figure>
-        <div class="info-content">
-          <h1 class="name" title="Patrick Walker">Patrick Walker</h1>
-          <p class="title">Cloud Solutions Architect</p>
-        </div>
-        <button class="info-more-btn" data-collapse-btn>
-          <span>Show Contacts</span>Contact
-        </button>
-      </div>
-      <div class="sidebar-info_more">
-        <div class="separator"></div>
-        <ul class="contacts-list">
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto:walkerpatrickr@protonmail.com" class="contact-link">walkerpatrickr@protonmail.com</a>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-              <a href="tel:+15305636115" class="contact-link">+1 (530) 563-6115</a>
-            </div>
-          </li>
-        </ul>
-        <div class="separator"></div>
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="https://github.com/walkerpr" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/walkerrpatrick/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </aside>
+      <div id="sidebar"></div>
     <div class="main-content">
       <!--
         - #NAVBAR
       -->
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-          <form style="display: inline" action="../index.html" method="get">
-            <button class="nav-link">About</button>
-          </form>
-          </li>
-          <li class="navbar-item">
-          <form style="display: inline" action="resume.html" method="get">
-            <button class="nav-link">Resume</button>
-          </form>
-          </li>
-          <li class="navbar-item">
-          <form style="display: inline" action="projects.html" method="get">
-            <button class="nav-link">Projects</button>
-          </form>
-          </li>
-        </ul>
-      </nav>
+        <nav class="navbar">
+      <div id="navbar"></div>
+        </nav>
       <!--
         - #PROJECTS
       -->
@@ -160,7 +95,7 @@
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img src="../images/project-1.png" alt="fundo" loading="eager">
+                  <img src="images/project-1.png" alt="fundo" loading="eager">
                 </figure>
                 <h3 class="project-title">Scalable Kubernetes Dev Environment</h3>
                 <p class="project-category">Infrastructure Solutions</p>
@@ -173,7 +108,7 @@
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img src="../images/project-2.png" alt="workspaces" loading="eager">
+                  <img src="images/project-2.png" alt="workspaces" loading="eager">
                 </figure>
                 <h3 class="project-title">AWS WorkSpaces Onboarding Scripts</h3>
                 <p class="project-category">Systems Automation</p>
@@ -186,7 +121,7 @@
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img src="../images/project-3.png" alt="kubernetes" loading="eager">
+                  <img src="images/project-3.png" alt="kubernetes" loading="eager">
                 </figure>
                 <h3 class="project-title">Kubernetes Deployment Playbooks</h3>
                 <p class="project-category">Systems Automation</p>
@@ -199,7 +134,7 @@
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img src="../images/project-4.png" alt="openshift" loading="eager">
+                  <img src="images/project-4.png" alt="openshift" loading="eager">
                 </figure>
                 <h3 class="project-title">OpenShift Deployment Playbooks</h3>
                 <p class="project-category">Systems Automation</p>
@@ -212,7 +147,7 @@
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img src="../images/project-5.png" alt="portfolio" loading="eager">
+                  <img src="images/project-5.png" alt="portfolio" loading="eager">
                 </figure>
                 <h3 class="project-title">Portfolio Website</h3>
                 <p class="project-category">Web Development</p>
@@ -224,15 +159,30 @@
       </article>
     </div>
   </main>
+    <!--
+    jquery
+    -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--
+    inline script
+    -->
+<script>
+    $("#sidebar").load("sidebar.html");
+    $("#navbar").load("navbar.html");
+</script>
   <!--
     - custom js link
   -->
-  <script src="../js/script.js"></script>
+  <script src="js/script.js"></script>
   <!--
     - ionicon link
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--
+    jquery
+    -->
+
 </body>
 
 </html>
