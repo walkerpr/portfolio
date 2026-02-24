@@ -23,8 +23,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
 
 </head>
 
@@ -33,12 +36,26 @@
     - #MAIN
   -->
   <main>
-      <div id="sidebar"></div>
+    <!--
+     - #SIDEBAR
+    -->
+    <div id="sidebar">
+      <!--
+      (Uses Jquery load function to load sidebar.html from id)
+      -->
+    </div>
+    <!--
+      - #main-content
+    -->
     <div class="main-content">
       <!--
         - #NAVBAR
       -->
-      <div id="navbar"></div>
+      <div id="navbar">
+        <!--
+      (Uses Jquery load function to load navbar.html from id)
+      -->
+      </div>
       <article class="resume active" data-page="resume" id="resume">
         <header>
           <h2 class="h2 page-title">Resume</h2>
@@ -56,17 +73,17 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <!--
+  <!--
     jquery
     -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!--
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!--
     inline script
     -->
-<script>
+  <script>
     $("#sidebar").load("sidebar.html");
     $("#navbar").load("navbar.html");
-</script>
+  </script>
 </body>
 
 </html>
