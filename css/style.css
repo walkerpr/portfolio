@@ -1019,6 +1019,135 @@ main {
 }
 
 /**
+ * #accomplishments
+ */
+.accomplishments {
+  margin-bottom: 30px;
+}
+
+.accomplishments-title {
+  margin-bottom: 20px;
+}
+
+.accomplishments-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  padding: 0px 0px 5px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+}
+
+.accomplishments-content-box {
+  position: relative;
+  padding: 5px;
+  z-index: 1;
+  margin-bottom: 0px;
+  justify-content: left;
+}
+
+.accomplishments-content-box::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: white;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.accomplishments-item {
+  position: relative;
+  background: var(--border-gradient-blue);
+  margin-bottom: 0px;
+  padding: 2px;
+  border-radius: 5px;
+  box-shadow: var(--shadow-2);
+  z-index: 1;
+}
+
+.accomplishments-item::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: white;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.accomplishments-avatar-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(15px, -25px);
+  background: var(--bg-gradient-onyx);
+  border-radius: 14px;
+  box-shadow: var(--shadow-1);
+}
+
+.accomplishments-icon-box {
+  margin-bottom: 10px;
+}
+
+.accomplishments-icon-box img {
+  margin: auto;
+}
+
+.accomplishments-item .title {
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+  background: var(--text-gradient-blue);
+  background-clip: text;
+  color: var(--deep-blue);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+  font-family: var(--ff-merriweather);
+  letter-spacing: 1px;
+  margin-bottom: 2px;
+}
+
+.accomplishments-item .text {
+  color: black;
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  display: -webkit-box;
+  line-clamp: 4;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-align: center;
+  overflow: hidden;
+  letter-spacing: 1px;
+}
+
+.accomplishments-item .large_text {
+  color: var(--gentle-blue);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-600);
+  font-family: var(--ff-merriweather);
+  margin-bottom: 2px;
+  font-style: italic;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.accomplishments-item .hyperlink_text {
+  color: var(--deep-blue);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  display: -webkit-box;
+  line-clamp: 4;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+/**
  * #clients
  */
 .clients {
