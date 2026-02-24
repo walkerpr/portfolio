@@ -137,6 +137,8 @@ article.active {
  .info-content .name {
     white-space: nowrap;
     text-align: center;
+    font-size: var(--fs-2);
+    letter-spacing: 2px;
   }
  .info-content .title {
     margin: auto;
